@@ -1,0 +1,38 @@
+### Composer
+/vendor/
+/composer.phar
+composer
+
+### IDE
+/nbproject/
+/.idea/
+
+### System
+*.retry
+.realsync*
+*.iml
+.DS_Store
+*~
+
+### Docker
+/docker/.data
+/docker
+.env
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###

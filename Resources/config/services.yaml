@@ -1,0 +1,12 @@
+services:
+  Alapin\CalculatorBundle\Service\Tokenizer:
+    public: false
+
+  Alapin\CalculatorBundle\Service\CalculatorService:
+    public: true
+
+  Alapin\CalculatorBundle\Service\Provider\DefaultCalculator:
+    arguments:
+      - '@Alapin\CalculatorBundle\Service\Tokenizer'
+    tags:
+      - { name: alapin.expression_calculator.provider , key: 'default' }
